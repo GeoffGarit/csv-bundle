@@ -1,0 +1,21 @@
+{
+  "name": "geoffgarit/csv-bundle",
+  "description": "A simple csv bundle for Symfony",
+  "type": "symfony-bundle",
+  "require": {
+    "php": ">=8.1",
+    "symfony/framework-bundle": "^5.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "GeoffGarit\\CsvBundle\\": "src/"
+    }
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "GeoffGarit",
+      "email": "contact@geoffreygaritey.com"
+    }
+  ]
+}
