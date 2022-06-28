@@ -1,4 +1,7 @@
 services:
-    src/Command/ParseCsvCommand:
+    geoffgarit.csv-bundle.parse:
+        class: src/Command/ParseCsvCommand
         public: true
         autowire: true
+        tags:
+            -  { name: console.command }
