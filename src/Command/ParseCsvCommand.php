@@ -1,4 +1,7 @@
 <?php
+
+declare(strict_types=1);
+
 namespace GeoffGarit\CsvBundle\Command;
 
 use Symfony\Component\Console\Command\Command;
@@ -7,7 +10,12 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 class ParseCsvCommand extends Command
 {
-    protected static $defaultName = 'csv-bundle:parse';
+    protected static $defaultName = 'geoffgarit:csv-bundle:parse';
+
+    protected function configure(): void
+    {
+        $this->setHelp('This command parse a csv file');
+    }
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {

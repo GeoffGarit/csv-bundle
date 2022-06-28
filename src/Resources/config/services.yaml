@@ -1,0 +1,4 @@
+services:
+    src/Command/ParseCsvCommand:
+        public: true
+        autowire: true
