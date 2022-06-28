@@ -14,6 +14,7 @@ class ParseCsvCommand extends Command
 
     protected function configure(): void
     {
+        $this->setName('geoffgarit:csv-bundle:parse');
         $this->setHelp('This command parse a csv file');
     }
 
