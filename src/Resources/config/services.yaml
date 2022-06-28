@@ -4,4 +4,4 @@ services:
         public: true
         autowire: true
         tags:
-            -  { name: console.command }
+            -  { name: console.command, command: 'geoffgarit:csv-bundle:parse' }
